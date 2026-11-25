@@ -1,0 +1,127 @@
+RadarStud — повний прогон автономних тестів ЛР №7–20
+Час: 2026-11-25T20:41:21.207Z
+Node.js: v24.14.0
+Каталог: C:\Users\DeLL\Desktop\ІУС\Курсова\Bot_tuk
+
+============================================================
+=== check_l7_12_core.js ===
+OK parseNumber
+OK parseId / parseHours / parseCount / parseMinutes
+OK CSV parsing
+OK storage CRUD
+OK profile save/get
+OK legacy and topic subscriptions
+OK reminders and report day
+OK corrupt JSON is reported
+OK format helpers
+OK logger writes ERROR to bot.log
+OK commands and buttons registered
+OK /start shows main menu
+OK settings dialogue saves profile
+OK /check branches
+OK /alert admin guard
+OK /cancel clears state
+OK bot.catch is installed
+Пройдено: 17, помилок: 0
+Код завершення: 0
+
+============================================================
+=== check_l13_stats.js ===
+OK calcStats
+OK groupBySource / groupBySensor
+OK groupBySource handles constructor key
+OK topValues
+OK parseCount
+OK formatStatsReport
+OK storage.listTopReadings
+OK /report command
+OK /top command
+Пройдено: 9, помилок: 0
+Код завершення: 0
+
+============================================================
+=== check_l14_scheduler.js ===
+OK REPORT_TIME and interval
+OK Kyiv time helpers
+OK daily report 0 → 1 → 1
+OK due reminders are removed before sending
+OK start uses exactly one 60s interval
+Пройдено: 5, помилок: 0
+Код завершення: 0
+
+============================================================
+=== check_l15_broadcast.js ===
+OK topics include project names and aliases
+OK broadcast delivers, counts errors and unsubscribes 403 only
+OK alerts: normal value stays silent
+OK alerts: anomaly is broadcast
+OK alerts: boundaries are normal
+OK /broadcast is admin-only
+Пройдено: 6, помилок: 0
+Код завершення: 0
+
+============================================================
+=== check_l16_weather.js ===
+OK config URLs and cache settings
+OK weatherForCity fetches twice and caches
+OK unknown city returns null
+OK HTTP 500 is reported
+OK network error is propagated
+OK fetchFn injection works
+OK formatWeather
+OK /weather command
+OK /compare command with two cities
+Пройдено: 9, помилок: 0
+Код завершення: 0
+
+============================================================
+=== check_l17_18_ingest.js ===
+OK signal constants
+OK makeRandom seeds
+OK generateValue sequence
+OK outbox addToQueue and isPermanent
+OK outbox persistence
+OK isValidTime
+OK flushQueue retries and stops on transient error
+OK HTTP key and body validation
+OK valid reading is created once
+OK late readings are inserted chronologically
+OK eventId is idempotent
+OK alerts only for fresh anomalies
+Пройдено: 12, помилок: 0
+Код завершення: 0
+
+============================================================
+=== check_l19_20_visual.js ===
+OK PNG signature
+OK PNG canvas dimensions in IHDR
+OK CRC32 reference value
+OK drawLine / fillRect / drawText work
+OK sparkline ascending
+OK sparkline equal values
+OK sparkline empty
+OK downsample limits point count
+OK chartToPng produces 640×360
+OK buildLineChart canvas is correct
+OK escapeHtml escapes script tag
+OK escapeHtml escapes quotes
+OK statusOf low
+OK statusOf high
+OK statusOf ok
+OK buildPage has meta refresh
+OK buildPage has table and chart image
+OK constructor sensor does not break dashboard
+OK dashboard requires token
+OK dashboard rejects wrong token
+OK dashboard serves page with valid token
+OK chart.png requires sensor parameter
+OK chart.png rejects sensor with one reading
+OK chart.png returns PNG
+OK sample_chart.png artifact is generated
+PNG артефакт: C:\Users\DeLL\Desktop\ІУС\Курсова\Bot_tuk\data\sample_chart.png
+Пройдено: 25, помилок: 0
+Код завершення: 0
+
+============================================================
+ПІДСУМОК: тестових файлів 7, з помилками 0.
+УСІ ТЕСТИ ПРОЙДЕНО.

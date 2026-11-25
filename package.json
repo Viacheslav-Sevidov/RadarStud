@@ -1,0 +1,24 @@
+{
+  "name": "bot_tuk",
+  "version": "1.0.0",
+  "description": "RadarStud Telegram bot with IoT ingest and dashboard",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "seed": "node seed.js",
+    "seed:chart": "node seed_chart.js",
+    "simulate": "node simulator.js",
+    "test": "node tests/run_all.js",
+    "test:all": "node tests/run_all.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3"
+  }
+}
